@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090a0e">
+
+    <meta name="description" content="Estgaming Film Production — Découvrez nos courts-métrages, nos créations cinématographiques et notre univers.">
+
+    <title>Estgaming Film Production | Studio indépendant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="topbar">
+
+    <a href="#accueil" class="logo">
+        <span class="logo-main">EST<span class="logo-red">GAMING</span></span>
+        <span class="logo-sub">FILM PRODUCTION</span>
+    </a>
+
+    <nav class="nav" id="main-nav">
+        <a href="#accueil">Accueil</a>
+        <a href="#films">Nos films</a>
+        <a href="#studio">Le studio</a>
+        <a href="#contact">Contact</a>
+        <button class="performance-toggle"
+                id="performance-toggle"
+                type="button"
+                aria-pressed="false">
+            Mode performance : désactivé
+        </button>
+    </nav>
+
+    <button class="menu-toggle"
+            type="button"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false"
+            aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+</header>
+
+
+<!-- ACCUEIL -->
+<main>
+
+<section class="hero" id="accueil">
+
+    <div class="hero-content">
+
+        <span class="hero-label">Studio indépendant · Depuis Estgaming</span>
+
+        <p class="hero-overline">L'IMAGE. L'ÉMOTION. LE CINÉMA.</p>
+
+        <h1>
+            DES HISTOIRES<br>
+            QUI LAISSENT<br>
+            <span>UNE TRACE.</span>
+        </h1>
+
+        <p class="hero-description">
+            Bienvenue dans l'univers d'Estgaming Film Production.
+            Des courts-métrages, des ambiances singulières et des
+            histoires imaginées pour vous faire vivre le cinéma autrement.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#films" class="btn btn-primary">
+                Découvrir les films
+            </a>
+
+            <a href="#studio" class="btn btn-outline">
+                Explorer le studio
+            </a>
+        </div>
+
+        <div class="hero-signature">
+            <span class="signature-line"></span>
+            <span>ESTGAMING FILM PRODUCTION</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FILMS -->
+<section class="films" id="films">
+
+    <div class="section-heading">
+
+        <span class="eyebrow">Notre collection</span>
+
+        <h2>
+            DES FILMS.<br>
+            DES UNIVERS.
+        </h2>
+
+        <p>
+            Chaque réalisation possède son atmosphère,
+            son histoire et sa propre identité.
+            Découvrez nos créations.
+        </p>
+
+    </div>
+
+
+    <div class="film-grid" id="film-grid"></div>
+    <p class="film-count" id="film-count" aria-live="polite"></p>
+    <button class="load-more-button" id="load-more-videos" type="button" hidden>
+        Afficher plus de vidéos
+    </button>
+    <noscript>Activez JavaScript pour afficher les films.</noscript>
+
+</section>
+
+
+<!-- STUDIO -->
+<section class="about" id="studio">
+
+    <div class="about-content">
+
+        <div class="about-text">
+
+            <span class="eyebrow">Derrière la caméra</span>
+
+            <h2>
+                UN STUDIO.<br>
+                UNE <span>VISION.</span>
+            </h2>
+
+            <p>
+                Estgaming Film Production est un espace de création
+                dédié à l'imagination audiovisuelle et à la réalisation
+                de courts-métrages.
+            </p>
+
+            <p>
+                Action, mystère, paranormal et univers cinématographiques :
+                chaque projet est une nouvelle occasion d'expérimenter,
+                de raconter et de créer.
+            </p>
+
+            <p>
+                Notre ambition : donner vie à des idées et proposer
+                des expériences visuelles qui restent en mémoire.
+            </p>
+
+        </div>
+
+
+        <div class="about-panel">
+
+            <span class="about-panel-label">Notre univers</span>
+
+            <h3>Nos domaines de création</h3>
+
+            <ul>
+                <li>Courts-métrages</li>
+                <li>Cinéma et réalisation</li>
+                <li>Horreur et paranormal</li>
+                <li>Action et automobile</li>
+                <li>Montage et création vidéo</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <div class="contact-content">
+
+        <span class="eyebrow">Restons connectés</span>
+
+        <h2>
+            LE PROCHAIN<br>
+            FILM COMMENCE <span>ICI.</span>
+        </h2>
+
+        <p>
+            Retrouvez nos réalisations, nos prochaines créations
+            et l'actualité du studio sur notre chaîne YouTube.
+        </p>
+
+        <a
+            href="https://www.youtube.com/@estgaming9625"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary">
+            Découvrir notre chaîne
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <a href="#accueil" class="footer-logo">
+        EST<span>GAMING</span>
+    </a>
+
+    <p>
+        © <span id="year"></span> Estgaming Film Production.
+        Tous droits réservés.
+    </p>
+
+    <a href="#accueil" class="footer-top">
+        Retour en haut ↑
+    </a>
+
+</footer>
+
+
+<script src="videos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
